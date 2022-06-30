@@ -1,0 +1,46 @@
+@import './base/variables';
+@import './base/mixin';
+@import './base/typography';
+// Above Custom scss is imported so that we can change the bootstrap variables colors
+$primary: color(primary-color);
+$danger: color(cancel);
+// Bootstrap scss that wee nedded in this project
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/root';
+@import '../../../node_modules/bootstrap/scss/reboot';
+@import '../../../node_modules/bootstrap/scss/containers';
+@import '../../../node_modules/bootstrap/scss/bootstrap-grid';
+@import '../../../node_modules/bootstrap/scss/bootstrap-utilities';
+@import '../../../node_modules/bootstrap/scss/forms';
+@import '../../../node_modules/bootstrap/scss/buttons';
+@import '../../../node_modules/bootstrap/scss/spinners';
+@import '../../../node_modules/bootstrap/scss/modal';
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.rdw-editor-main,
+.rdw-editor-toolbar {
+  border: 1px solid #d2d2d2;
+  padding: 4px 10px;
+}
+
+// Caliing Custom scss
+@import './components/dropdowns';
+@import './components/modal';
+@import './layout/nav';
+@import './layout/sidebar';
+@import './layout/structure';
+@import './layout/table';
+@import './layout/card.scss';
+@import './pages/login';
